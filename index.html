@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="dist/output.css">
+</head>
+<body class="bg-indigo-600 grid place-content-center h-screen">
+    <div class=" bg-sky-600 h-[550px] w-[350px] flex flex-col justify-center items-center rounded-lg shadow-[4px_4px_8px] shadow-indigo-900 md:h-[550px] md:w-[450px]">
+        <h1 class="text-[30px] font-bold text-slate-300">Weather Forecast</h1>
+        <div class="items-center flex flex-row justify-center">
+            <input class="p-2 mt-6 rounded-[25px]" type="text" placeholder="Enter the city Name"
+            spellcheck="false" >
+            <button class="h-[38px] w-[38px] bg-white mt-6 ml-3 rounded-full items-center"><img class="h-8 w-7 p-[6px] text-center" src="images/search.png" alt=""></button>
+        </div>
+        <div id="details" class="flex flex-col items-center mt-[30px]">
+            <div class="flex flex-row items-center gap-x-10 justify-center">
+                <div class="flex flex-col items-center">
+                    <p id="min_temp" class="text-[18px] text-slate-300">22°C</p>
+                    <p class="text-[12px] text-slate-300">Minimum</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img id="weather_icon" class="h-[130px]" src="images/rain.png" alt="">
+                    <h1 id="temp" class="text-[38px] text-slate-300">22°C</h1>
+                    <h2 id="city" class="text-[38px] text-slate-300">New York</h2>
+                </div>
+                <div class="flex flex-col items-center">
+                    <p id="max_temp" class="text-[18px] text-slate-300">22°C</p>
+                    <p class="text-[12px] text-slate-300">Maximum</p>
+                </div>
+            </div>
+            <div class="flex flex-row justify-between gap-x-5">
+                <div class="flex flex-row mt-[30px] gap-x-1">
+                    <img class="h-[15px] mt-4" src="images/humidity.png" alt="">
+                    <div>
+                        <p id="humidity" class="text-[12px] text-slate-300">50%</p>
+                        <p class="text-[12px] text-slate-300">Humidity</p>
+                    </div>
+                </div>
+                <div class="flex flex-row mt-[30px] gap-x-1">
+                    <img class="h-[18px] mt-4" src="images/wind.png" alt="">
+                    <div>
+                        <p id="speed" class="text-[12px] text-slate-300">15 km/h</p>
+                        <p class="text-[12px] text-slate-300">Speed</p>
+                    </div>
+                </div>
+                <div class="flex flex-row mt-[30px] gap-x-1">
+                    <img class="h-[18px] mt-4" src="images/pressure.png" alt="">
+                    <div>
+                        <p id="pressure" class="text-[12px] text-slate-300">15 hPa</p>
+                        <p class="text-[12px] text-slate-300">Pressure</p>
+                    </div>
+                </div>
+                <div class="flex flex-row mt-[30px] gap-x-1">
+                    <img class="h-[18px] mt-4" src="images/visibility.png" alt="">
+                    <div>
+                        <p id="visibility" class="text-[12px] text-slate-300">15 km</p>
+                        <p class="text-[12px] text-slate-300">Visibility</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/dist/script.js"></script>
+</body>
+</html>
